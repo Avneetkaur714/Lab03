@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Your Hamburger</title>
+<link rel="stylesheet" href="CSS/styles.css">
+    <script src="js/sheet.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <h1>Create Your Hamburger</h1>
+    <form id="hamburgerForm">
+        <label for="bun">Bun Type:</label>
+        <select id="bun" name="bun" required>
+            <option value="Big Sesame Bun">Big Sesame Bun</option>
+            <option value="Potato Bun">Potato Bun</option>
+            <option value="Small Sesame Bun">Small Sesame Bun</option>
+            <option value="Long Sesame Bun">Long Sesame Bun</option>
+        </select><br>
+
+        <label for="meat">Meat Type:</label>
+        <select id="meat" name="meat" required>
+            <option value="Beef">Beef</option>
+            <option value="Chicken">Chicken</option>
+            <option value="Vegetarian">Vegetarian</option>
+            <option value="Plant-based">Plant-based</option>
+        </select><br>
+
+        <label for="patties">Number of Patties:</label>
+        <select id="patties" name="patties" required>
+            <option value="Single">Single</option>
+            <option value="Double">Double</option>
+            <option value="Triple">Triple</option>
+        </select><br>
+
+        <label for="toppings">Toppings:</label>
+        <select id="toppings" name="toppings" multiple required>
+        <option value="Tomatoes">Tomatoes</option>
+        <option value="Lettuce">Lettuce</option>
+        <option value="Pickles">Pickles</option>
+        <option value="Onions">Onions</option>
+        <option value="Jalapenos">Jalapenos</option>
+        </select><br>
+
+        <label for="cheeses">Cheese Types:</label>
+        <select id="cheeseOption" name="cheeseOption" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+
+        <label for="sauces">Sauce Types:</label>
+        <select id="sauces" name="sauces" multiple required>
+        <option value="Mayo">Mayo</option>
+        <option value="Ketchup">Ketchup</option>
+        <option value="Angry Sauce">Angry Sauce</option>
+        <option value="BBQ">BBQ</option>
+        <option value="Ranch">Ranch</option>
+        <option value="Chipotle">Chipotle</option>
+        <option value="Honey Mustard">Honey Mustard</option>
+        </select><br>
+
+        <input type="submit" value="Create Hamburger">
+    </form>
+    <div id="result"></div>
+</div>
+</body>
+</html>
